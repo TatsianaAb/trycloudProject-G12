@@ -8,4 +8,10 @@ Feature:  As a user, I should be able to search any item/ users from the homepag
     Then verify the app displays the expected result "<expectedResult>" option
 
     Examples:
-    | searchValue | expectedResult |
+      | searchValue         | expectedResult      |
+      | Talk                | Talk                |
+      | HelloWoodenSpoon!   | HelloWoodenSpoon!   |
+      | SomeFile            | SomeFile            |
+      | 20220425_161016.jpg | 20220425_161016.jpg |
+      | User52              | User52              |
+      | User100             | User100             |

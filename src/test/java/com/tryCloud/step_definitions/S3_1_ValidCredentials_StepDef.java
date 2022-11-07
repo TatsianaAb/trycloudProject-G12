@@ -14,7 +14,7 @@ public class S3_1_ValidCredentials_StepDef {
     S3_1_ValidCredentials_Page validCredentials_page = new S3_1_ValidCredentials_Page();
     @Given("User is on the login page {string}")
     public void user_is_on_the_login_page(String expectedUrl) {
-        Driver.getDriver().get(ConfigurationReader.getProperty("tryCloud_env"));
+        Driver.getDriver().get(ConfigurationReader.getProperty("env"));
         String actualUrl = Driver.getDriver().getCurrentUrl();
         Assert.assertEquals(expectedUrl, actualUrl);
 

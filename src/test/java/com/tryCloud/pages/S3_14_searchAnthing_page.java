@@ -18,7 +18,7 @@ public class S3_14_searchAnthing_page {
     @FindBy(xpath = "//input[@type='search']")
     public WebElement searchBox;
 
-    @FindBy(xpath = "//ul[@class='unified-search__results unified-search__results-files']")
+    @FindBy(xpath = "//h3[@class='unified-search__result-line-one']")
     public WebElement searchResults;
 
 
