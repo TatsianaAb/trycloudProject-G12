@@ -28,6 +28,7 @@ public class FilesModuleStepDefs {
         BrowserUtils.waitForVisibility(basePage.files, 10);
       basePage.files.click();
     }
+
     @Then("verifies the page title is {string}")
     public void verifies_the_page_title_is(String expectedTitle) {
       BrowserUtils.verifyTitle(expectedTitle);
