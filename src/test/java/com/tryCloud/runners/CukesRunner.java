@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {
+                "json:target/cucumber.json",
                 "pretty",
                 "html:target/cucumber-reports.html",
                 "rerun:target/rerun.txt",
@@ -15,7 +16,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/tryCloud/step_definitions",
         dryRun = false, //true --> will give all unimplemented snippets, false --> will run step definitions
-        tags = "",
+        tags = "@searchanything",
         publish = false
 
 )
