@@ -47,6 +47,12 @@ public class FilesModulePage {
    @FindBy (xpath = "(//span[.='UploadTest'])[2]")
    public WebElement uploadTestfile;
 
+   @FindBy (xpath = "//a[@class='action action-menu permanent']/span[1]") ////*[@id='fileList']/tr/td[2]/a/span[3]/a[2]/span[1]
+   public WebElement actionIcon;
+
+   @FindBy(xpath = "//*[@id=\"filestable\"]/tfoot/tr/td[1]")
+   public WebElement favoritesFiles;
+
     public void iconMenuOptionsClick(String string){
         for (WebElement each : iconMenuOptions) {
             if(each.getText().equals(string)){
