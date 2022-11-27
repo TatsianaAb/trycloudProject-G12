@@ -54,6 +54,7 @@ public class BasePage {
     @FindBy (xpath = "//a[normalize-space()='Log out']")
     public WebElement logoutButton;
 
-
+    @FindBy(xpath = "//input[@type='search']")
+    public WebElement searchBox;
 
 }
